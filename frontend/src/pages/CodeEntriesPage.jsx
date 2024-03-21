@@ -41,7 +41,7 @@ const CodeEntriesPage = () => {
       try {
         const { data } = await axios({
           method: "GET",
-          url: `${import.meta.env.VITE_SERVER_URI}/codeEntry`,
+          url: `${import.meta.env.VITE_SERVER_URI}/codeentry`,
         })
 
         setCodeEntries(data?.data)
